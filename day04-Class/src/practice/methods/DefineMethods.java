@@ -164,13 +164,13 @@ public class DefineMethods {
 
 		public double arithmetic2(String operator, int x, int y) {
 			double result = 0.0;
-			if (operator == "+") {
+			if (operator.equals("+")) {
 				result = (double)x + y;
-			} else if (operator == "-") {
+			} else if (operator.equals("-")) {
 				result = (double)x - y;
-			} else if (operator == "*") {
+			} else if (operator.equals("*")) {
 				result = (double)x * y;
-			} else if (operator == "/") {
+			} else if (operator.equals("/")) {
 				result = (double)x / y;
 			}
 			
