@@ -92,7 +92,7 @@ public class Product {
 	// 3. 메소드 선언부
 	/** 출력 */
 	public void print() {
-		System.out.printf("제품 정보 [제품번호 : %s, 제품 명 : %s, 가격 : %d, 재고수량 : %d]%n", prodCode, prodName, price, quantity);
+		System.out.printf("제품 정보 [제품번호 : %s, 제품 명 : %s, 가격 : %,6d, 재고수량 : %2d]%n", prodCode, prodName, price, quantity);
 	}
 	
 	/** 할인가 : 입력된 퍼센트만큼 할인가격 리턴

@@ -125,16 +125,18 @@ public class Warehouse {
 				// 삭제할 제품 뒷쪽부터 끝까지 복사
 				for (int idx = rmIndex; idx < newProducts.length; idx++) {
 					newProducts[idx] = products[idx + 1];
-				}
+				} 
 				
 			} else {
 			// 2. rmIndex 가 배열 마지막일 때
 				for (int idx = 0; idx < products.length - 1; idx++) {
 					newProducts[idx] = products[idx];
-				} // end for
-			} // end if-else
+				} 
+			} // end in if-else
+
+			this.products = newProducts;
 			
-		}
+		}// end outer if
 	} // end method remove
 	
 	/**
