@@ -1,7 +1,5 @@
 package shop;
 
-import java.util.List;
-
 /**
  * 물건을 판매하는 매장을 나타내는 클래스
  * 매장에는 물건 판매를 위하여 최소 1명의
