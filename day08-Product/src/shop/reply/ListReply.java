@@ -7,7 +7,7 @@ import shop.Product;
 /**
  * 제품 전체 목록을 보여주는 업무 진행의
  * 응답을 구현
- * @author PC38206
+ * @author PC38209
  *
  */
 public class ListReply implements Reply {
