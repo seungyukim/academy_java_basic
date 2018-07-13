@@ -32,34 +32,51 @@ public class ListWarehouse implements GeneralWarehouse {
 	}
 
 	@Override
-	public void add(Product product) {
-		products.add(product);
+	public int add(Product product) {
+		boolean success = products.add(product);
+		int addCnt = 0;
+		
+		if (success) {
+			addCnt++;
+		}
+		
+		return addCnt;
 	}
 
 
 	@Override
 	public Product get(Product product) {
 		int getIndex = findProductIdx(product);
-		return products.get(getIndex);
+		Product found = null;
+		
+		if (getIndex > -1) {
+			// 찾아올 제품이 존재
+			found = products.get(getIndex); 
+		} 
+		
+		return found;
 	}
 
 	@Override
-	public void set(Product product) {
+	public int set(Product product) {
 		int setIdx = findProductIdx(product);
 		
 		if (setIdx > -1) {
 			products.set(setIdx, product);
 		}
+		
+		return setIdx;
 	}
 
 	@Override
-	public void remove(Product product) {
+	public int remove(Product product) {
 		int rmIdx = findProductIdx(product);
 		
 		if (rmIdx > -1) {
 			products.remove(rmIdx);
 		}
-
+		
+		return rmIdx;
 	}
 
 	@Override

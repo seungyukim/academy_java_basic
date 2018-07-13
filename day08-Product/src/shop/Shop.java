@@ -68,8 +68,8 @@ public class Shop {
 	 * @param product
 	 * @return
 	 */
-	public Product get(Product product) {
-		return manager.get(product);
+	public void get(Product product) {
+		manager.get(product);
 	}
 	
 	/**
@@ -77,8 +77,8 @@ public class Shop {
 	 * 매니저에게 부탁함
 	 * @return
 	 */
-	public List<Product> getAllProducts() {
-		return manager.getAllProducts();
+	public void getAllProducts() {
+		manager.getAllProducts();
 	}
 	
 }
