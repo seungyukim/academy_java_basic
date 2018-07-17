@@ -22,7 +22,7 @@ import java.util.Scanner;
  * @author PC38209
  *
  */
-public class PreparedStatementTest {
+public class PreparedDqlTest {
 
 	private static final String URL = "jdbc:oracle:thin:@//127.0.0.1:1521/XE";
 	private static final String USER = "SCOTT";
