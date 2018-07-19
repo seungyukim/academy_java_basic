@@ -4,9 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import api.object.Product;
-import shoes.map.Shoe;
-
 public class ShoeTest {
 
 	public static void main(String[] args) {
